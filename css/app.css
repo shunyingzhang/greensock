@@ -1,97 +1,144 @@
 body {
-    font: 16px/26px "Open Sans", Helvetica, Helvetica Neue, Arial;
-    background-color: #76c897;
-    color: #2b4d66;
-    padding-bottom: 200px;
+  font: 16px/26px "Open Sans", Helvetica, Helvetica Neue, Arial;
+  background-color: black;
+  color: #2b4d66;
+  padding-bottom: 200px;
 }
 h1 {
-    text-transform: uppercase;
-    font-size: 40px;
-    margin-bottom: 35px;
-    line-height: 1.5em;
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-bottom: 35px;
+  line-height: 1.5em;
 }
 h1 span {
-    display: block;
+  display: block;
 }
 h1 em {
-    background-color: #b1dec7;
-    height: 5px;
-    width: 200px;
-    display: block;
-    margin: 0 auto;
-    position: relative;
-    bottom: -14px;
+  background-color: #b1dec7;
+  height: 5px;
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  bottom: -14px;
 }
 
 .intro {
-    color: #fff;
-    font-size: 30px;
-    margin-bottom: 50px;
-    line-height: 1.2em;
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 50px;
+  line-height: 1.2em;
 }
 
 /* =Header */
 header {
-    max-width: 500px;
-    padding-top: 15px;
-    margin: 0 auto;
-    text-align: center;
+  max-width: 500px;
+  padding-top: 15px;
+  margin: 0 auto;
+  text-align: center;
 }
 header em {
-    color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 }
 header img {
-    max-width: 100%;
-    display: block;
+  max-width: 100%;
+  display: block;
 }
 
 h2 {
-    background-color: #2b4d66;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: normal;
-    margin: 0 5px 0 2px;
-    font-size: 20px;
-    padding: 10px 0;
+  background-color: #2b4d66;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: 0 5px 0 2px;
+  font-size: 20px;
+  padding: 10px 0;
 }
 
 .list {
-    list-style: none;
-    text-align: left;
-    margin: 0 5px 0 2px;
-    padding: 0;
-    font-size: 20px;
+  list-style: none;
+  text-align: left;
+  margin: 0 5px 0 2px;
+  padding: 0;
+  font-size: 20px;
 }
 .list a {
-    display: block;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: #2b4d66;
-    background-color: #ebf3f7;
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #2b4d66;
+  background-color: #ebf3f7;
 }
 .list a span {
-    transition: all 0.2s ease-out;
-    position: relative;
-    left: 0;
+  transition: all 0.2s ease-out;
+  position: relative;
+  left: 0;
 }
 .list a:hover {
-    background-color: rgba(235, 243, 247, 0.7);
+  background-color: rgba(235, 243, 247, 0.7);
 }
 .list a:hover span {
-    left: 8px;
-    transition: all 0.2s ease-out;
+  left: 8px;
+  transition: all 0.2s ease-out;
 }
 .list li {
-    margin: 0 0 1px 0;
-    padding: 0;
+  margin: 0 0 1px 0;
+  padding: 0;
 }
 .buttons {
-    position: fixed;
-    top: 20px;
-    right: 20px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
 }
 .buttons button {
-    width: 140px;
-    display: block;
-    margin-bottom: 5px;
+  width: 140px;
+  display: block;
+  margin-bottom: 5px;
+}
+/* swiper */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide .img-bg {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+/* slide1 */
+.cutout-character {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  width: 50%;
+}
+.image-list-container {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+
+  display: flex;
+  gap: 20px;
+}
+
+.list-image {
+  width: 18%;
+  border: 2px solid gray; /* Default border to transparent */
+  transition: border-color 0.3s ease; /* Smooth transition for border change */
+}
+
+.list-image:hover,
+.list-image:focus {
+  border-color: gold; /* Border color when hovered or focused */
+  outline: none; /* Remove default focus outline */
 }
